@@ -1,4 +1,5 @@
-# Podes Viajar
+# WWE-Network-Test
+Development test for WWE
 
 Used technology
  - npm
@@ -12,4 +13,4 @@ Instalation
   - on root folder run: *npm run build*
 
 See the project:
-- run: *npm start* # podemos-viajar
+- run: *npm start* 
