@@ -1,3 +1,4 @@
+/*
 body {
   background-color: #000;
   font-family: "Roboto";
@@ -10,7 +11,7 @@ a {
     text-decoration: underline;
   }
 }
-/*nav header*/
+!*nav header*!
 .navbar {
   a {
     font-size:0.875rem !important;
@@ -174,7 +175,7 @@ a {
 
 }
 
-/*for mobile devices*/
+!*for mobile devices*!
 @media (max-width: $break-small) {
   .wwen-height {
     height: 100%;
@@ -223,4 +224,4 @@ a {
   .footer-main-section {
     height: 100%;
   }
-}
+}*/
