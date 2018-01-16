@@ -22,4 +22,34 @@ function component() {
         }
     }
 }
-component();
+//component();
+function requestTouristItems(){
+    $.ajax({
+        url: 'http://localhost:7800/touristitems.json#',
+        method: 'GET'
+    }).then(function(data) {
+        console.log(data);
+        renderTourist(data);
+    });
+
+};
+
+function renderTourist(data) {
+    console.log(jQuery.fn.jquery);
+    var html="";
+
+    html+='<div id="main-tourist" class="row">';
+    for (var i=0;i < data.length; i++ ){
+
+        // if(i%3 == 0){
+        //     if(i!=0){
+        //      html+='</div>';
+        //     }
+        //     html+='<div id="main-tourist" class="row">';
+        // }
+        html+='<div class="col-6 col-sm-4 col-md-4"><img src="'+ data[i].image +'" alt="" id="'+ data[i].id +'" class="mw-50 img-fluid pv-rounded">'+ data[i].title +'</div>';
+    }
+    html+='</div>';
+    $("#main-tourist" ).html(html);
+}
+requestTouristItems();

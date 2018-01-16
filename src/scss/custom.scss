@@ -1,227 +1,230 @@
-/*
-body {
-  background-color: #000;
-  font-family: "Roboto";
-  color: white;
-}
-a {
-  color: white;
-  &:hover{
-    color: white;
-    text-decoration: underline;
-  }
-}
-!*nav header*!
-.navbar {
-  a {
-    font-size:0.875rem !important;
-    font-family: "Roboto";
-  }
-}
+//body {
+//  background-color: #000;
+//  font-family: "Roboto";
+//  color: white;
+//}
+//a {
+//  color: white;
+//  &:hover{
+//    color: white;
+//    text-decoration: underline;
+//  }
+//}
+///*nav header*/
+//.navbar {
+//  a {
+//    font-size:0.875rem !important;
+//    font-family: "Roboto";
+//  }
+//}
+//
+//.btn {
+//  &.btn-primary{
+//    background-color: $wwen-red-button;
+//    border-color: $wwen-red-button;
+//    &:hover {
+//      background-color: #c61321;
+//      border-color: #c61321;
+//    }
+//  }
+//
+//}
+//
+//.main-section {
+//  position: relative;
+//  background: black;
+//  overflow: hidden;
+//  &:before {
+//    content: ' ';
+//    display: block;
+//    position: absolute;
+//    left: 0;
+//    top: 0;
+//    width: 100%;
+//    height: 100%;
+//    z-index: 1;
+//    opacity: 0.6;
+//    background: url(../images/background_main.png);
+//    -ms-background-size: cover;
+//    -o-background-size: cover;
+//    -moz-background-size: cover;
+//    -webkit-background-size: cover;
+//    background-size: cover;
+//  }
+//}
+//
+//.container {
+//  &.wwen-pt {
+//    position: relative;
+//    z-index: 2;
+//  }
+//}
 
-.btn {
-  &.btn-primary{
-    background-color: $wwen-red-button;
-    border-color: $wwen-red-button;
-    &:hover {
-      background-color: #c61321;
-      border-color: #c61321;
-    }
-  }
-
-}
-
-.main-section {
-  position: relative;
-  background: black;
-  overflow: hidden;
-  &:before {
-    content: ' ';
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    opacity: 0.6;
-    background: url(../images/background_main.png);
-    -ms-background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    background-size: cover;
-  }
-}
-
-.container {
-  &.wwen-pt {
-    position: relative;
-    z-index: 2;
-  }
-}
-
-.wwen-height {
-  height: 65.88em;
-}
-
-.wwen-pt {
-  padding-top: 27rem !important;
+.pv-rounded {
+  border-radius: 1rem;
 }
 
-.wwen-box-text {
-  > h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    &:before {
-      content: "";
-      display: block;
-      height: 0.3125rem;
-      width: 88%;
-      background: $wwen-red-button;
-      margin: 0 auto 1.563rem;
-    }
-  }
-}
-
-.wwen-divider {
-  &-grey {
-    &:before {
-      background: $wwen-grey;
-      content: "";
-      position: absolute;
-      width: 0.125rem;
-      height: 100%;
-      top: 0;
-      right: 0;
-    }
-  }
-  &-white {
-    &:before {
-      background: white;
-      content: "";
-      position: absolute;
-      width: 0.125rem;
-      height: 100%;
-      top: 0;
-      right: 0;
-    }
-  }
-}
-
-.joinfree {
-  .joinfree-width-100 {
-    width: 100%;
-    position: relative;
-    float: left;
-    button {
-      font-size: 1.625rem;
-      font-weight: bold;
-    }
-  }
-  span {
-    font-size: 1.188rem;
-    font-style: italic;
-  }
-}
-
-.live-box {
-  font-size: 1.5rem;
-  line-height: 1.7rem;
-  color: #ffffff;
-  .live {
-    font-size: 1.75rem;
-    font-weight: bold;
-    color: $wwen-red-button;
-  }
-}
-
-.arrow-down {
-  background: url(../images/arrow_down.png) no-repeat center;
-  background-color: transparent;
-  height: 100%;
-}
-
-.footer-main-section {
-  height: 11.88rem;
-  background-color: black;
-  position: relative;
-  overflow: hidden;
-  span {
-    font-size: 1.340rem;
-  }
-  &:before {
-    content: ' ';
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    -ms-background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-image: url(../images/footer.png);
-    background-repeat: no-repeat;
-    -webkit-filter: blur(80px);
-    -moz-filter: blur(80px);
-    -o-filter: blur(80px);
-    -ms-filter: blur(80px);
-    filter: blur(80px);
-  }
-
-
-}
-
-!*for mobile devices*!
-@media (max-width: $break-small) {
-  .wwen-height {
-    height: 100%;
-  }
-  .wwen-text-center {
-    text-align: center !important;
-  }
-  #join_now{
-    position: fixed;
-    bottom: 0px;
-    width: 100%;
-    left: 0;
-    height: 3rem;
-    z-index: 1000;
-  }
-}
-@media screen and (max-width: $break-large) {
-  #wwen_logo {
-    width: 5.5rem;
-  }
-  .wwen-pt {
-    padding-top: 10rem !important;
-  }
-  .wwen-divider {
-    &-grey {
-      &:before {
-        background: transparent;
-        content: "";
-        position: absolute;
-        width: 0;
-        top: 0;
-        right: 0;
-      }
-    }
-    &-white {
-      &:before {
-        background: transparent;
-        content: "";
-        position: absolute;
-        width: 0;
-        top: 0;
-        right: 0;
-      }
-    }
-  }
-  .footer-main-section {
-    height: 100%;
-  }
-}*/
+//.wwen-height {
+//  height: 65.88em;
+//}
+//
+//.wwen-pt {
+//  padding-top: 27rem !important;
+//}
+//
+//.wwen-box-text {
+//  > h1 {
+//    font-size: 3rem;
+//    font-weight: bold;
+//    &:before {
+//      content: "";
+//      display: block;
+//      height: 0.3125rem;
+//      width: 88%;
+//      background: $wwen-red-button;
+//      margin: 0 auto 1.563rem;
+//    }
+//  }
+//}
+//
+//.wwen-divider {
+//  &-grey {
+//    &:before {
+//      background: $wwen-grey;
+//      content: "";
+//      position: absolute;
+//      width: 0.125rem;
+//      height: 100%;
+//      top: 0;
+//      right: 0;
+//    }
+//  }
+//  &-white {
+//    &:before {
+//      background: white;
+//      content: "";
+//      position: absolute;
+//      width: 0.125rem;
+//      height: 100%;
+//      top: 0;
+//      right: 0;
+//    }
+//  }
+//}
+//
+//.joinfree {
+//  .joinfree-width-100 {
+//    width: 100%;
+//    position: relative;
+//    float: left;
+//    button {
+//      font-size: 1.625rem;
+//      font-weight: bold;
+//    }
+//  }
+//  span {
+//    font-size: 1.188rem;
+//    font-style: italic;
+//  }
+//}
+//
+//.live-box {
+//  font-size: 1.5rem;
+//  line-height: 1.7rem;
+//  color: #ffffff;
+//  .live {
+//    font-size: 1.75rem;
+//    font-weight: bold;
+//    color: $wwen-red-button;
+//  }
+//}
+//
+//.arrow-down {
+//  background: url(../images/arrow_down.png) no-repeat center;
+//  background-color: transparent;
+//  height: 100%;
+//}
+//
+//.footer-main-section {
+//  height: 11.88rem;
+//  background-color: black;
+//  position: relative;
+//  overflow: hidden;
+//  span {
+//    font-size: 1.340rem;
+//  }
+//  &:before {
+//    content: ' ';
+//    display: block;
+//    position: absolute;
+//    left: 0;
+//    top: 0;
+//    width: 100%;
+//    height: 100%;
+//    -ms-background-size: cover;
+//    -o-background-size: cover;
+//    -moz-background-size: cover;
+//    -webkit-background-size: cover;
+//    background-size: cover;
+//    background-image: url(../images/footer.png);
+//    background-repeat: no-repeat;
+//    -webkit-filter: blur(80px);
+//    -moz-filter: blur(80px);
+//    -o-filter: blur(80px);
+//    -ms-filter: blur(80px);
+//    filter: blur(80px);
+//  }
+//
+//
+//}
+//
+///*for mobile devices*/
+//@media (max-width: $break-small) {
+//  .wwen-height {
+//    height: 100%;
+//  }
+//  .wwen-text-center {
+//    text-align: center !important;
+//  }
+//  #join_now{
+//    position: fixed;
+//    bottom: 0px;
+//    width: 100%;
+//    left: 0;
+//    height: 3rem;
+//    z-index: 1000;
+//  }
+//}
+//@media screen and (max-width: $break-large) {
+//  #wwen_logo {
+//    width: 5.5rem;
+//  }
+//  .wwen-pt {
+//    padding-top: 10rem !important;
+//  }
+//  .wwen-divider {
+//    &-grey {
+//      &:before {
+//        background: transparent;
+//        content: "";
+//        position: absolute;
+//        width: 0;
+//        top: 0;
+//        right: 0;
+//      }
+//    }
+//    &-white {
+//      &:before {
+//        background: transparent;
+//        content: "";
+//        position: absolute;
+//        width: 0;
+//        top: 0;
+//        right: 0;
+//      }
+//    }
+//  }
+//  .footer-main-section {
+//    height: 100%;
+//  }
+//}
