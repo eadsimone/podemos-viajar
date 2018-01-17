@@ -23,6 +23,9 @@ function component() {
     }
 }
 //component();
+
+var ItemTourist = {};
+
 function requestTouristItems(){
     $.ajax({
         url: 'http://localhost:7800/touristitems.json#',
@@ -30,15 +33,41 @@ function requestTouristItems(){
     }).then(function(data) {
         console.log(data);
         renderTourist(data);
+        ItemTourist=data;
     });
 
 };
 
+var f = function (){$('.item-tourist-btn').click(function(event) {
+    // this._setSplashScreenCompleteFlag();
+    // this.hideSplashPage();
+    // window.location.hash = 'signin';
+    // modelMain.showMainScreen();
+    console.log("soy boton");
+    event.preventDefault();
+}.bind(this));
+};
+
+var getInfoItem = function (id) {
+
+
+
+
+}
+
+
+$('#main-tourist').on('click', 'div',function(e) {
+
+    getInfoItem();
+    $("#main-tourist" ).html('');//reset content
+    $("#main-tourist" ).html('aca va le contenido');//reset content
+    e.preventDefault();
+});
+
 function renderTourist(data) {
-    console.log(jQuery.fn.jquery);
     var html="";
 
-    html+='<div id="main-tourist" class="row">';
+    html+='<div id="main-tourist-row" class="row">';
     for (var i=0;i < data.length; i++ ){
 
         // if(i%3 == 0){
@@ -47,9 +76,9 @@ function renderTourist(data) {
         //     }
         //     html+='<div id="main-tourist" class="row">';
         // }
-        html+='<div class="col-6 col-sm-4 col-md-4"><img src="'+ data[i].image +'" alt="" id="'+ data[i].id +'" class="mw-50 img-fluid pv-rounded">'+ data[i].title +'</div>';
+        html+='<div class="col-6 col-sm-4 col-md-4 item-tourist-btn"><img src="'+ data[i].image +'" alt="" id="'+ data[i].id +'" class="mw-50 img-fluid pv-rounded">'+ data[i].title +'</div>';
     }
     html+='</div>';
     $("#main-tourist" ).html(html);
 }
-requestTouristItems();
+//requestTouristItems();
