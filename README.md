@@ -14,3 +14,4 @@ Instalation
 
 See the project:
 - run: *npm start* 
+- python -m SimpleHTTPServer 8000
