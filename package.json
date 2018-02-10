@@ -20,20 +20,20 @@
   },
   "homepage": "https://github.com/eadsimone/wwe_test#readme",
   "devDependencies": {
-    "clean-webpack-plugin": "^0.1.17",
-    "css-loader": "^0.28.7",
+    "clean-webpack-plugin": "^0.1.18",
+    "css-loader": "^0.28.9",
     "extract-text-webpack-plugin": "^3.0.2",
-    "file-loader": "^1.1.5",
+    "file-loader": "^1.1.6",
     "html-webpack-plugin": "^2.30.1",
     "node-sass": "^4.7.2",
     "sass-loader": "^6.0.6",
-    "style-loader": "^0.19.0",
+    "style-loader": "^0.19.1",
     "webpack": "^3.10.0",
-    "webpack-dev-server": "^2.9.7"
+    "webpack-dev-server": "^2.11.1"
   },
   "dependencies": {
-    "bootstrap": "^4.0.0-beta.2",
-    "jquery": "^1.9.1",
-    "popper.js": "^1.12.9"
+    "bootstrap": "^4.0.0",
+    "jquery": "^1.12.4",
+    "popper.js": "^1.13.0"
   }
 }

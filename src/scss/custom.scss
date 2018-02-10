@@ -1,8 +1,43 @@
 body {
   background-color: #000;
-  font-family: "Roboto";
+  font-family: 'Roboto', sans-serif;
   color: white;
+  //background-image: url("../images/balcarce_bg.jpg");
+  //background-repeat: repeat;
+  //background-position: center center ;
+  //background-color: black;
+  //opacity: 0.5;
 }
+.main-section {
+  display: block;
+  position: relative;
+  &::after {
+    content: "";
+    opacity: 0.3;
+    background: url("../images/balcarce_bg.jpg");
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+}
+
+#main-tourist {
+  opacity: 1;
+  background-color: transparent;
+  span{
+    font-weight: 600;
+    color: orange;
+  }
+}
+
 //a {
 //  color: white;
 //  &:hover{
@@ -29,29 +64,8 @@ body {
 //  }
 //
 //}
-//
-//.main-section {
-//  position: relative;
-//  background: black;
-//  overflow: hidden;
-//  &:before {
-//    content: ' ';
-//    display: block;
-//    position: absolute;
-//    left: 0;
-//    top: 0;
-//    width: 100%;
-//    height: 100%;
-//    z-index: 1;
-//    opacity: 0.6;
-//    background: url(../images/background_main.png);
-//    -ms-background-size: cover;
-//    -o-background-size: cover;
-//    -moz-background-size: cover;
-//    -webkit-background-size: cover;
-//    background-size: cover;
-//  }
-//}
+
+
 //
 //.container {
 //  &.wwen-pt {
@@ -178,23 +192,27 @@ body {
 //
 //}
 //
-///*for mobile devices*/
-//@media (max-width: $break-small) {
-//  .wwen-height {
-//    height: 100%;
-//  }
-//  .wwen-text-center {
-//    text-align: center !important;
-//  }
-//  #join_now{
-//    position: fixed;
-//    bottom: 0px;
-//    width: 100%;
-//    left: 0;
-//    height: 3rem;
-//    z-index: 1000;
-//  }
-//}
+/*for mobile devices*/
+@media (max-width: $break-small) {
+  .wwen-height {
+    height: 100%;
+  }
+  .wwen-text-center {
+    text-align: center !important;
+  }
+  #join_now{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    max-width: 100%;
+    left: 0;
+    height: 3rem;
+    z-index: 1000;
+  }
+  .overly{
+    overflow:  inherit;
+  }
+}
 //@media screen and (max-width: $break-large) {
 //  #wwen_logo {
 //    width: 5.5rem;
